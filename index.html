@@ -2,6 +2,9 @@
 <html>
 
 <head>
+
+
+
   <link rel="stylesheet" type="text/css" href="CSS/homestyle.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,9 +16,16 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--scroll-->
+    <script src="JS/ScrollMagic.min.js"type="text/javascript"></script>
   <script src='JS/function.js' type="text/javascript">
 
   </script>
+<!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
 
 
 </head>
@@ -30,7 +40,7 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="#">B and B</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -73,7 +83,7 @@
             <div class="carousel-caption text-left">
               <h1>Solar Panels</h1>
               <p>The Future of Water Pumps is here</p>
-              <p><a class="btn btn-lg btn-primary" href="" role="button" data-toggle="modal" data-target="#contactModal">Contact us today</a></p>
+              <p><a class="btn btn-lg btn-primary " href="" role="button" data-toggle="modal" data-target="#contactModal">Contact us today</a></p>
             </div>
           </div>
         </div>
@@ -126,33 +136,76 @@
           <rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
           <h2>About us</h2>
           <p>Read about our history of providing water for northern New Mexico</p>
-          <p><a class="btn btn-secondary" href="#footer" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" id='about-btn' role="button" onclick="toggleabout()"> Read More &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-md-3">
           <img src="photos/photo14.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
           <h2>Services</h2>
           <p>Check out the Services we Provide</p>
-          <p><a class="btn btn-secondary" href="#services" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary"  onclick="toggleservices()" id='service-btn'role="button" >View Services &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-md-3">
           <img src="photos/photo33.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
           <h2>Contact us</h2>
           <p>Do you want to contact us and set up an appointment?</p>
-          <p><a class="btn btn-secondary" href="" data-toggle="modal" data-target="#contactModal" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="" data-toggle="modal" data-target="#contactModal" role="button">Contact us &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-md-3">
           <img src="photos/photo1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
           <h2>Gallery</h2>
           <p>Take a look at our photo gallery to see our work.</p>
-          <p><a class="btn btn-secondary" href="#gallery" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#gallery" role="button">View Gallery &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
+
+      <!--about-->
+
+      <div class="about-us"id='about-us'style='display:none;'>
+        <hr class="featurette-divider">
+        <h2 class="featurette-heading">About us<span class="text-muted"> A little insight.</span></h2>
+        <p class="lead">B and B Water Well Services from solar pump installs to equipment repairs, we have the knowledge and experience necessary to ensure your water system is operating to its maximum potential. If your windmill or pump has recently been damaged, we provide swift and timely servicing to restore your equipment back to its proper condition. We install and repair several aspects of your system </p>
+
+
+
+      </div>
+
+
       <!-- START THE FEATURETTES -->
+      <!--services-->
+
+      <div class="about-us"id='services'style='display:none;'>
+        <hr class="featurette-divider">
+        <h2 class="featurette-heading">Services<span class="text-muted">What we do.</span></h2>
+        <ul class="lead list">
+          <li>
+            solar pumps
+          </li>
+          <li>
+            Storage Tanks
+          </li>
+          <li>
+            Stock Tanks
+          </li>
+          <li>
+            windmills
+          </li>
+          <li>
+            solar
+          </li>
+          <li>
+            solar
+          </li>
+        </ul>
+
+
+
+      </div>
 
       <hr class="featurette-divider" id='services'>
 
-      <div class="row featurette">
+
+      <div class="row featurette ft-1">
         <div class="col-md-7">
           <h2 class="featurette-heading">Bringing down the windmills <span class="text-muted">It will blow your mind.</span></h2>
           <p class="lead">Removing an old windmill should have you worried! call us now to bring you into the future!</p>
@@ -166,7 +219,7 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette ft-1">
+      <div class="row featurette ">
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading">Digging up old pipe <span class="text-muted">See for yourself.</span></h2>
           <p class="lead">got a leak in your old pipe systems? repair it now</p>
@@ -439,7 +492,15 @@
 
 
 </body>
+<script>
+var controller = new ScrollMagic.Controller();
 
+var scene = new ScrollMagic.Scene({
+triggerElement: '.featurette'
+})
+.setClassToggle('.featurette','show')
+.addTo(controller);
+</script>
 
 
 </html>
