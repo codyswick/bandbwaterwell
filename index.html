@@ -126,11 +126,11 @@
   ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing slideanim"id='go'>
+    <div class="container marketing "id='go'>
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 slideanim">
           <img src="photos/photo11.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
           <!--<svg src="photo17.jpg"class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
           <title>Placeholder</title>
@@ -139,7 +139,7 @@
           <p>Read about our history of providing water for northern New Mexico</p>
           <p><a class="btn btn-secondary" id='about-btn' role="button" onclick="toggleabout()" href="#about"> Read More &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-md-3">
+        <div class="col-md-3 slideanim">
           <img src="photos/photo14.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
           <h2>Services</h2>
           <p>Check out the Services we Provide</p>
@@ -339,15 +339,15 @@
 
       <!--map-->
       <!--Modal:mapModal-->
-      <div class="modal fade modal-fluid" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade modal-fluid " id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
 
           <!--Content-->
-          <div class="modal-content">
+          <div class="modal-content border-map">
             <button type="button" class="btn btn-primary btn-1" data-dismiss="modal">Close <i class="fas fa-times "></i></button>
 
             <!--Body-->
-            <div class="modal-body mb-0 p-0">
+            <div class="modal-body mb-0 p-0 ">
 
               <!--Google map-->
               <div id="map" style="height: 400px"></div>
@@ -385,12 +385,12 @@
       <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog form-dark" role="document">
           <!--Content-->
-          <div class="modal-content  " style="background-repeat: no-repeat; background: linear-gradient(to right, #bdc3c7, #2c3e50);width: 100%; ">
+          <div class="modal-content  " style="background-repeat: no-repeat; background: rgba(0,0,0,0.8);width: 100%; ">
             <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
               <!--Header-->
               <div class="modal-header text-center pb-4">
                 <h3 class="modal-title   font-weight-bold" id="myModalLabel"><strong>CONTACT</strong> <a class="green-text font-weight-bold"><strong> US</strong></a></h3>
-                <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" style='color:#c5ecfd'data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
@@ -398,7 +398,7 @@
               <div class="modal-body">
                 <!--Body-->
 
-                <form method="post" role='form'action="https://formspree.io/codyswick1988@gmail.com">
+                <form method="post" role='form'action="https://formspree.io/Billy_swick@yahoo.com">
                   <div class="md-form mb-5">
 
                     <input type="text" name="name" placeholder='Your Name' class="form-control validate white-text">
@@ -422,7 +422,7 @@
 
                     <!--Grid column-->
                     <div class="text-center mb-3 col-md-12">
-                      <button type="submit" name='submit'value='Send' class="btn btn-outline-primary btn-block btn-rounded z-depth-1">Send Message</button>
+                      <button type="submit" value='Send' class="btn btn-outline-primary btn-block btn-rounded z-depth-1">Send Message</button>
                     </div>
                     <!--Grid column-->
 
@@ -517,7 +517,7 @@ $(document).ready(function(){
       var pos = $(this).offset().top;
 
       var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
+        if (pos < winTop + 800) {
           $(this).addClass("slides");
         }
     });

@@ -158,6 +158,21 @@ h2{
   width:100%;
   height:auto;
 }
+
+.form-control{
+  background:transparent!important;
+
+  color: white!important;
+  border:0!important;
+  border-bottom: 2px solid  #c5ecfd!important;
+
+}
+label{
+  color:black;
+}
+.form-control::placeholder{
+  color: #c5ecfd!important;
+}
 .img-gal{
   padding:0px;
 }
@@ -170,6 +185,14 @@ h2{
 
 .more{
   text-align:center;
+}
+
+
+
+
+.border-map{
+  border: 3px solid #6dd5ed!important;
+  padding: 3px;
 }
 
 /* button and hover effect------------*/
