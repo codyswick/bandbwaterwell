@@ -1,11 +1,11 @@
 <$php
 
-if(isset($_post['submit'])){
-  $name = $_post['name'];
-  $subject = $_post['subject'];
-  $mailFrom = $_post['mail'];
-  $phone = $_post['phone'];
-  $message = $_post['message'];
+if(isset($_POST['submit'])){
+  $name = $_POST['name'];
+  $subject = $_POST['subject'];
+  $mailFrom = $_POST['mail'];
+  $phone = $_POST['phone'];
+  $message = $_POST['message'];
 
   $mailTo = 'codyswick1988@gmail.com'
   $headers = "From: ".$mailFrom;
