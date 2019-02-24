@@ -1,17 +1,3 @@
-$(document).ready(function(){
-  $("img").click(function(){
-  var t = $(this).attr("src");
-  $(".img-gal").html("<img src='"+t+"' class='modal-img'>");
-  $("#myModal").modal();
-});
-
-$("video").click(function(){
-  var v = $("video > source");
-  var t = v.attr("src");
-  $(".img-gal").html("<video class='model-vid' controls><source src='"+t+"' type='video/mp4'></source></video>");
-  $("#myModal").modal();
-});
-});//EOF Document.ready
 
 
 
@@ -32,6 +18,7 @@ function toggleabout() {
     x.style.display = "block";
     y.style.display = 'none'
     document.getElementById('about-btn').innerHTML = 'Read Less &raquo';
+    document.getElementById('service-btn').innerHTML = 'View Services &raquo';
   } else {
     x.style.display = "none";
     document.getElementById('about-btn').innerHTML = 'Read More &raquo';
@@ -45,6 +32,7 @@ function toggleservices() {
     x.style.display = "block";
     y.style.display = "none";
     document.getElementById('service-btn').innerHTML = 'View Less &raquo';
+    document.getElementById('about-btn').innerHTML = 'Read More &raquo';
   } else {
     x.style.display = "none";
     document.getElementById('service-btn').innerHTML = 'View Services &raquo';
@@ -62,5 +50,5 @@ var controller = new ScrollMagic.Controller();
 var scene = new ScrollMagic.Scene({
   triggerElement: '.row'
 })
-.setClassToggle('.row','show')
+.setClassToggle('.ft-1','show')
 .addTo(controller);
