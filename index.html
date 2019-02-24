@@ -398,23 +398,23 @@
               <div class="modal-body">
                 <!--Body-->
 
-                <form method="POST" role='form'action="https://formspree.io/codyswick1988@gmail.com">
+                <form method="POST" role='form'action="contactform.php">
                   <div class="md-form mb-5">
 
-                    <input type="text" id="name" placeholder='Your Name' class="form-control validate white-text">
+                    <input type="text" name="name" placeholder='Your Name' class="form-control validate white-text">
                     <label for="name">Name</label>
 
-                    <input type="text" id="phone" placeholder='999-999-9999' class="form-control validate white-text">
+                    <input type="text" name="phone" placeholder='999-999-9999' class="form-control validate white-text">
                     <label for="phone">Phone</label>
 
 
-                    <input type="email" id="Form-email5" placeholder='Your-Email@email.com' class="form-control validate white-text">
+                    <input type="email" name="mail" placeholder='Your-Email@email.com' class="form-control validate white-text">
                     <label data-error="wrong" data-success="right" for="Form-email5">Email</label>
 
                   </div>
                   <div class="form-group">
                     <label for="comment">Comment:</label>
-                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <textarea class="form-control" rows="5" name="message"placeholder="message"></textarea>
                   </div>
 
                   <!--Grid row-->
@@ -422,7 +422,7 @@
 
                     <!--Grid column-->
                     <div class="text-center mb-3 col-md-12">
-                      <button type="submit" value='Send' class="btn btn-outline-primary btn-block btn-rounded z-depth-1">Send Message</button>
+                      <button type="submit" name='submit'value='Send' class="btn btn-outline-primary btn-block btn-rounded z-depth-1">Send Message</button>
                     </div>
                     <!--Grid column-->
 
