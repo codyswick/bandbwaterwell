@@ -254,187 +254,89 @@
 
 
     <div class="container">
-      <div class="row">
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-            <li data-target="#carousel" data-slide-to="3"></li>
-            <li data-target="#carousel" data-slide-to="4"></li>
-            <li data-target="#carousel" data-slide-to="5"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="d-none d-lg-block">
-                <div class="slide-box">
-                  <img src="photos/thumb1.jpg" alt="First slide">
-                  <img src="photos/thumb41.jpg" alt="First slide">
-                  <img src="photos/thumb40.jpg" alt="First slide">
-                  <img src="photos/thumb2.jpg" alt="First slide">
+        <div class="row" id='gallery-row'>
+            <div class="col-sm-6">
+                <div id="carousel" class="carousel slide" data-interval="2500" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div id='gallery-item'class="carousel-item active">
+                            <img src="photos/photo50.jpg">
+                        </div>
+                        <div id='gallery-item'class="carousel-item">
+                            <img src="photos/photo44.jpg">
+                        </div>
+                        <div id='gallery-item'class="carousel-item">
+                            <img src="photos/photo3.jpg">
+                        </div>
+                        <div id='gallery-item'class="carousel-item">
+                            <img src="photos/photo42.jpg">
+                        </div>
+                        <div id='gallery-item' class="carousel-item">
+                            <img src="photos/photo42.jpg">
+                        </div>
+                        <div id='gallery-item'class="carousel-item">
+                            <img src="photos/photo42.jpg">
+                        </div>
+                        <div id='gallery-item' class="carousel-item">
+                            <img src="photos/photo42.jpg">
+                        </div>
+                        <div id='gallery-item'class="carousel-item">
+                            <img src="photos/photo42.jpg">
+                        </div>
+                        <div id='gallery-item' class="carousel-item">
+                            <img src="photos/photo42.jpg">
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
-              </div>
-              <div class="d-none d-md-block d-lg-none">
-                <div class="slide-box">
-                  <img src="photos/thumb41.jpg" alt="First slide">
-                  <img src="photos/thumb47.jpg" alt="First slide">
-                  <img src="photos/thumb38.jpg" alt="First slide">
+                <div class="clearfix">
+                    <div id="thumbcarousel" class="carousel slide" data-interval="2501" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div id='gallery-item'class="carousel-item active">
+                                <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="photos/thumb1.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="photos/thumb44.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="photos/thumb3.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="photos/thumb42.jpg"></div>
+                            </div>
+                            <div id='gallery-item'class="carousel-item">
+                                <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="photos/thumb1.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="photos/thumb44.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="photos/thumb3.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="photos/thumb42.jpg"></div>
+                            </div>
+                            <div id='gallery-item'class="carousel-item">
+                                <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="photos/thumb1.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="photos/thumb44.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="photos/thumb3.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="photos/thumb42.jpg"></div>
+                            </div>
+                            <div id='gallery-item'class="carousel-item">
+                                <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="photos/thumb1.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="photos/thumb44.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="photos/thumb3.jpg"></div>
+                                <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="photos/thumb42.jpg"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#thumbcarousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#thumbcarousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
-              </div>
-              <div class="d-none d-sm-block d-md-none">
-                <div class="slide-box">
-                  <img src="photos/thumb40.jpg" alt="First slide">
-                  <img src="photos/thumb39.jpg" alt="First slide">
-                </div>
-              </div>
-              <div class="d-block d-sm-none">
-                <img class="d-block w-100" src="photos/thumb44.jpg" alt="First slide">
-              </div>
             </div>
-            <div class="carousel-item">
-              <div class="d-none d-lg-block">
-                <div class="slide-box">
-                  <img src="photos/thumb37.jpg" alt="Second slide">
-                  <img src="photos/thumb38.jpg" alt="Second slide">
-                  <img src="photos/thumb48.jpg" alt="Second slide">
-                  <img src="photos/thumb43.jpg" alt="Second slide">
-                </div>
-              </div>
-              <div class="d-none d-md-block d-lg-none">
-                <div class="slide-box">
-                  <img src="photos/thumb49.jpg" alt="Second slide">
-                  <img src="photos/thumb42.jpg" alt="Second slide">
-                  <img src="photos/thumb2.jpg" alt="Second slide">
-                </div>
-              </div>
-              <div class="d-none d-sm-block d-md-none">
-                <div class="slide-box">
-                  <img src="photos/thumb37.jpg" alt="Second slide">
-                  <img src="photos/thumb44.jpg" alt="Second slide">
-                </div>
-              </div>
-              <div class="d-block d-sm-none">
-                <img class="d-block w-100" src="photos/thumb47.jpg" alt="Second slide">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-none d-lg-block">
-                <div class="slide-box">
-                  <img src="photos/thumb37.jpg" alt="Third slide">
-                  <img src="photos/thumb38.jpg" alt="Third slide">
-                  <img src="photos/thumb48.jpg" alt="Third slide">
-                  <img src="photos/thumb43.jpg" alt="Third slide">
-                </div>
-              </div>
-              <div class="d-none d-md-block d-lg-none">
-                <div class="slide-box">
-                  <img src="photos/thumb49.jpg" alt="Third slide">
-                  <img src="photos/thumb42.jpg" alt="Third slide">
-                  <img src="photos/thumb2.jpg" alt="Third slide">
-                </div>
-              </div>
-              <div class="d-none d-sm-block d-md-none">
-                <div class="slide-box">
-                  <img src="photos/thumb37.jpg" alt="Third slide">
-                  <img src="photos/thumb44.jpg" alt="Third slide">
-                </div>
-              </div>
-              <div class="d-block d-sm-none">
-                <img class="d-block w-100" src="photos/thumb47.jpg" alt="Third slide">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-none d-lg-block">
-                <div class="slide-box">
-                  <img src="photos/thumb37.jpg" alt="Fourth slide">
-                  <img src="photos/thumb38.jpg" alt="Fourth slide">
-                  <img src="photos/thumb48.jpg" alt="Fourth slide">
-                  <img src="photos/thumb43.jpg" alt="Fourth slide">
-                </div>
-              </div>
-              <div class="d-none d-md-block d-lg-none">
-                <div class="slide-box">
-                  <img src="photos/thumb49.jpg" alt="Fourth slide">
-                  <img src="photos/thumb42.jpg" alt="Fourth slide">
-                  <img src="photos/thumb2.jpg" alt="Fourth slide">
-                </div>
-              </div>
-              <div class="d-none d-sm-block d-md-none">
-                <div class="slide-box">
-                  <img src="photos/thumb37.jpg" alt="Fourth slide">
-                  <img src="photos/thumb44.jpg" alt="Fourth slide">
-                </div>
-              </div>
-              <div class="d-block d-sm-none">
-                <img class="d-block w-100" src="photos/thumb47.jpg" alt="Fourth slide">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-none d-lg-block">
-                <div class="slide-box">
-                  <img src="photos/thumb1.jpg" alt="Fifth slide">
-                  <img src="photos/thumb1.jpg" alt="Fifth slide">
-                  <img src="photos/thumb1.jpg" alt="Fifth slide">
-                  <img src="photos/thumb1.jpg" alt="Fifth slide">
-                </div>
-              </div>
-              <div class="d-none d-md-block d-lg-none">
-                <div class="slide-box">
-                  <img src="photos/thumb1.jpg" alt="Fifth slide">
-                  <img src="photos/thumb1.jpg" alt="Fifth slide">
-                  <img src="photos/thumb1.jpg" alt="Fifth slide">
-                </div>
-              </div>
-              <div class="d-none d-sm-block d-md-none">
-                <div class="slide-box">
-                  <img src="photos/thumb37.jpg" alt="Fifth slide">
-                  <img src="photos/thumb44.jpg" alt="Fifth slide">
-                </div>
-              </div>
-              <div class="d-block d-sm-none">
-                <img class="d-block w-100" src="photos/thumb47.jpg" alt="Fifth slide">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-none d-lg-block">
-                <div class="slide-box">
-                  <img src="photos/thumb1.jpg" alt="Sixth slide">
-                  <img src="photos/thumb38.jpg" alt="Sixth slide">
-                  <img src="photos/thumb48.jpg" alt="Sixth slide">
-                  <img src="photos/thumb43.jpg" alt="Sixth slide">
-                </div>
-              </div>
-              <div class="d-none d-md-block d-lg-none">
-                <div class="slide-box">
-                  <img src="photos/thumb49.jpg" alt="Sixth slide">
-                  <img src="photos/thumb42.jpg" alt="Sixth slide">
-                  <img src="photos/thumb2.jpg" alt="Sixth slide">
-                </div>
-              </div>
-              <div class="d-none d-sm-block d-md-none">
-                <div class="slide-box">
-                  <img src="photos/thumb37.jpg" alt="Sixth slide">
-                  <img src="photos/thumb44.jpg" alt="Sixth slide">
-                </div>
-              </div>
-              <div class="d-block d-sm-none">
-                <img class="d-block w-100" src="photos/thumb47.jpg" alt="Sixth slide">
-              </div>
-            </div>
-          </div>
 
-          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
-      </div>
     </div>
-
 
     <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
@@ -636,41 +538,8 @@
     });
   })
 </script>
-<script>
-  $(document).ready(function() {
-    $("img").click(function() {
-      var t = $(this).attr("src");
-      $(".img-gal").html("<img src='" + t + "' class='modal-img'>");
-      $("#myModal").modal();
-    });
 
-    $("video").click(function() {
-      var v = $("video > source");
-      var t = v.attr("src");
-      $(".img-gal").html("<video class='model-vid' controls><source src='" + t + "' type='video/mp4'></source></video>");
-      $("#myModal").modal();
-    });
-  }); //EOF Document.ready
-</script>
-<script>
-  $('.slide').carousel({
-    interval: false
-  });
 
-  $('.slide .item').each(function() {
-    var next = $(this).next();
-    if (!next.length) {
-      next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-
-    if (next.next().length > 0) {
-      next.next().children(':first-child').clone().appendTo($(this));
-    } else {
-      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-    }
-  });
-</script>
 
 
 </html>
