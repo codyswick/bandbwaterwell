@@ -79,14 +79,14 @@
 	justify-content:center;
 	height: 50%;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 880px) {
   #carousel-thumb {
     width:100%;
     padding:0;
 
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 880px) {
    .carousel-indicators{
     display:none!important;
   }
