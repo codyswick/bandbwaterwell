@@ -32,6 +32,7 @@ function toggleservices() {
     x.style.display = "block";
     y.style.display = "none";
     document.getElementById('service-btn').innerHTML = 'View Less &raquo';
+    document.getElementById('about-btn').innerHTML = 'Read More &raquo';
   } else {
     x.style.display = "none";
     document.getElementById('service-btn').innerHTML = 'View Services &raquo';
