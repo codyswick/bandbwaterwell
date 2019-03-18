@@ -140,7 +140,7 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-md-3 slideanim">
-          <img src="photos/photo11.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="storage tank">
+          <img src="photos/photo11.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="s">
           <!--<svg src="photo17.jpg"class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
           <title>Placeholder</title>
           <rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
@@ -238,7 +238,7 @@ recently been damaged, we provide swift and timely servicing to restore your equ
           <p class="lead">Removing an old windmill shouldn't have you worried! Call us now to bring you into the future!</p>
         </div>
         <div class="col-md-5">
-          <img src="photos/photo14.jpg" alt="old windmill" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+          <img src="photos/photo14.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
 
 
         </div>
@@ -252,7 +252,7 @@ recently been damaged, we provide swift and timely servicing to restore your equ
           <p class="lead">Got a leak in your old pipe systems? Repair it now</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img src="photos/photo25.jpg" alt="old pipes" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+          <img src="photos/photo25.jpg" alt="old windmill" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
         </div>
       </div>
 
@@ -388,16 +388,38 @@ recently been damaged, we provide swift and timely servicing to restore your equ
             <div id="map" style="height: 400px"></div>
             <script>
               // Initialize and add the map
-  function initMap() {
-// The location of Uluru
-    var BandB = {lat: 35.5942, lng: -105.2228};
-// The map, centered at Uluru
-    var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 9, center: BandB});
-// The marker, positioned at Uluru
-    var marker = new google.maps.Marker({position: BandB, map: map});
-  }
-  </script>
+              var citymap = {
+                    chicago: {
+                      center: {lat: 35.5942, lng: -105.2228},
+                      population: 2714856
+                    }
+                  };
+
+                  function initMap() {
+                    // Create the map.
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 7,
+                      center: {lat: 35.5942, lng: -105.2228},
+                      mapTypeId: 'roadmap'
+                    });
+
+                    // Construct the circle for each value in citymap.
+                    // Note: We scale the area of the circle based on the population.
+                    for (var city in citymap) {
+                      // Add the circle for this city to the map.
+                      var cityCircle = new google.maps.Circle({
+                        strokeColor: '#007bff',
+                        strokeOpacity: 0.8,
+                        strokeWeight: 2,
+                        fillColor: '#007bff',
+                        fillOpacity: 0.35,
+                        map: map,
+                        center: citymap[city].center,
+                        radius: 96560.6
+                      });
+                    }
+                  }
+                </script>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8mGJr1MHp1B-FabgZMuaedFALEqpe7eU&callback=initMap">
             </script>
 
